@@ -1,62 +1,62 @@
 body {
-	background-image:url('Images/Smaug.jpg');
-	background-repeat: no-repeat;
 	background-color: black;
-	display: block;
 }
 
-div#sidebar{
-	background-color: black;
-	left: 0px; 
-    top: 0px; 
-	width: 110px;
-	height: 100%;
-	position: absolute;
-	text-align: center;
-}
-
-#smallRightText {
-	font: 14px trajan, sans-serif;
+div.page {
 	position: relative;
-	float: right;
 }
 
-.sidebarbtn {
-	font: 20px trajan, sans-serif;
-	position: relative;
-	font-size: 20px;
-	line-height: 95%;
-	color:  #DAA520;
+img#logo {
 	display: block;
 	position: relative;
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 10px;
+	left: 0px;
+	top: 0px;
+	float: left;
 }
 
 .writing {
-	font: 18px trajan, sans-serif;
-	position: relative;
-	font-size: 40px;
-	color:  #DAA520;
-	display: block;
-	position: relative;
-	width: 90%;
-	padding: 10px;
+	color: gold;
+	position: absolute;
 }
 
-div.footer{
-	background-color: black;
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	width: 100%;
+.header {
+	position: relative;
+}
+
+a.menubarbtn {
+	outline: none;
+}
+
+div#menubar {
+	position: relative;
+	display: table;
+	font: 20px arial, sans-serif;
+	float: right;
+	padding-top:65px;
 	
 }
-#credits{
-	display: block;
+#currentFrame {
+	height: 480px;
+	width: 100%;
 	position: relative;
-	margin-left: auto;
-	margin-right: auto;
+}
+
+div#menubar ul li { 
+	display: inline; 
+	padding: 8px;
+}
+
+.footer {
+	position: relative;
+}
+
+.creditsContainer {
+	position: relative;
+}
+
+img#credits {
+	display: block;
+    max-height:150px;
+    width: auto;
+    height: auto;
 }

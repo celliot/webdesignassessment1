@@ -1,0 +1,12 @@
+.placeholder {
+	color: gold;
+}
+
+img#background {
+	display: block;
+	max-height: 480px;
+	width: auto;
+	height: auto;
+}
+
+#imdbText:
