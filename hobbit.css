@@ -15,8 +15,14 @@ div#sidebar{
 	text-align: center;
 }
 
+#smallRightText {
+	font: 14px trajan, sans-serif;
+	position: relative;
+	float: right;
+}
+
 .sidebarbtn {
-	font: Trajan;
+	font: 20px trajan, sans-serif;
 	position: relative;
 	font-size: 20px;
 	line-height: 95%;
@@ -26,6 +32,17 @@ div#sidebar{
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 10px;
+}
+
+.writing {
+	font: 18px trajan, sans-serif;
+	position: relative;
+	font-size: 40px;
+	color:  #DAA520;
+	display: block;
+	position: relative;
+	width: 90%;
 	padding: 10px;
 }
 
