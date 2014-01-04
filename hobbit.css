@@ -18,14 +18,15 @@ div#sidebar{
 .sidebarbtn {
 	font: Trajan;
 	position: relative;
-	line-height: 14px;
 	font-size: 20px;
+	line-height: 95%;
 	color:  #DAA520;
 	display: block;
 	position: relative;
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 10px;
 }
 
 div.footer{
