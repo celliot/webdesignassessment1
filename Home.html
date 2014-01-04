@@ -5,10 +5,16 @@
 	<link rel="stylesheet" href="hobbit.css" type="text/css"/>
 	<script type="text/javascript">
 	funtion loadHome() {
-		alert ("Going Home!");
+		window.alert ("Going Home!");
+		var currentFrame = document.getElemendById("currentFrame");
+		if (currentFrame.getAttribute("src")!="Main.html"){
+			currentFrame.setAttribute("src", "Main.html");
+			window.frames['currentFrame'].location.reload();
+		}
 	}
 	
 	function loadCastCrew(){
+		
 		alert ("");
 	}
 	
@@ -35,17 +41,17 @@
 		<img id="logo" src="Images/logo.png" alt="The Hobbit Logo"/>
 		<div id="menubar" class="writing">
 		<ul>
-			<li><a class="menubarbtn" href="" onClick="loadHome()">Home</a></li>
-			<li><a class="menubarbtn" href="" onClick="loadCastCrew()">Cast &amp; Crew</a></li>
-			<li><a class="menubarbtn" href="" onClick="loadGallery()">Gallery</a></li>
-			<li><a class="menubarbtn" href="" onClick="loadShopping()">Shopping</a></li>
-			<li><a class="menubarbtn" href="" onClick="loadVideos()">Videos</a></li>
-			<li><a class="menubarbtn" href="" onClick="loadHallofFame()">Hall of Fame</a></li>
+			<li><a id="home" class="menubarbtn" href="" onClick="loadHome()">Home</a></li>
+			<li><a id="castCrew" class="menubarbtn" href="" onClick="loadCastCrew()">Cast &amp; Crew</a></li>
+			<li><a id="gallery" class="menubarbtn" href="" onClick="loadGallery()">Gallery</a></li>
+			<li><a id="shopping" class="menubarbtn" href="" onClick="loadShopping()">Shopping</a></li>
+			<li><a id="videos" class="menubarbtn" href="" onClick="loadVideos()">Videos</a></li>
+			<li><a id="hall" class="menubarbtn" href="" onClick="loadHallofFame()">Hall of Fame</a></li>
 		</ul>
 		</div>
 	</div>	
 	<div class="main">
-	<iframe id="currentFrame" src="Main.html" frameBorder="0" scrolling="No"></iframe>
+	<iframe id="currentFrame" src="CastCrew.html" frameBorder="0" scrolling="No"></iframe>
 	</div>
 </div>
 <div class="footer">
