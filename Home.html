@@ -3,6 +3,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<link rel="stylesheet" href="hobbit.css" type="text/css"/>
+	<script type="text/javascript">
+	funtion loadHome() {
+		alert ("Going Home!");
+	}
+	
+	function loadCastCrew(){
+		alert ("");
+	}
+	
+	function loadGallery() {
+		alert ("");
+	}
+	
+	function loadShopping() {
+		alert ("");
+	}
+	
+	function loadVideos(){
+		alert ("");
+	}
+	
+	function loadHallofFame(){
+		alert ("");
+	}
+</script>
 </head>
 <body>
 <div class="page">
@@ -10,17 +35,17 @@
 		<img id="logo" src="Images/logo.png" alt="The Hobbit Logo"/>
 		<div id="menubar" class="writing">
 		<ul>
-			<li><a class="menubarbtn" href="#">Home</a></li>
-			<li><a class="menubarbtn" href="#">Cast &amp; Crew</a></li>
-			<li><a class="menubarbtn" href="#">Gallery</a></li>
-			<li><a class="menubarbtn" href="#">Shopping</a></li>
-			<li><a class="menubarbtn" href="#">Videos</a></li>
-			<li><a class="menubarbtn" href="#">Hall of Fame</a></li>
+			<li><a class="menubarbtn" href="" onClick="loadHome()">Home</a></li>
+			<li><a class="menubarbtn" href="" onClick="loadCastCrew()">Cast &amp; Crew</a></li>
+			<li><a class="menubarbtn" href="" onClick="loadGallery()">Gallery</a></li>
+			<li><a class="menubarbtn" href="" onClick="loadShopping()">Shopping</a></li>
+			<li><a class="menubarbtn" href="" onClick="loadVideos()">Videos</a></li>
+			<li><a class="menubarbtn" href="" onClick="loadHallofFame()">Hall of Fame</a></li>
 		</ul>
 		</div>
 	</div>	
 	<div class="main">
-	<iframe id="currentFrame" src="CastCrew.html" frameBorder="0" scrolling="No"></iframe>
+	<iframe id="currentFrame" src="Main.html" frameBorder="0" scrolling="No"></iframe>
 	</div>
 </div>
 <div class="footer">
@@ -30,5 +55,3 @@
 </div>
 </body>
 </html>
-<script>
-</script>
