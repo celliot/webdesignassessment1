@@ -9,26 +9,32 @@
 
 	function loadHome() {
 		document.getElementById("currentFrame").src = 'Main.html';
+		return false;
 	}
 	
 	function loadCastCrew(){
 		document.getElementById("currentFrame").src = 'castCrew.html';
+		return false;
 	}
 	
 	function loadGallery() {
 		document.getElementById("currentFrame").src = 'gallery.html';
+		return false;
 	}
 	
 	function loadShopping() {
 		document.getElementById("currentFrame").src = 'shopping.html';
+		return false;
 	}
 	
 	function loadVideos(){
 		document.getElementById("currentFrame").src = 'videos.html';
+		return false;
 	}
 	
 	function loadHallofFame(){
 		document.getElementById("currentFrame").src = 'hallofFame.html';
+		return false;
 	}
 </script>
 </head>
@@ -38,12 +44,12 @@
 		<img id="logo" src="Images/logo.png" alt="The Hobbit Logo"/>
 		<div id="menubar" class="writing">
 		<ul>
-			<li><a id="home" class="menubarbtn" href="" onClick="loadHome()">Home</a></li>
-			<li><a id="castCrew" class="menubarbtn" href="" onClick="loadCastCrew()">Cast &amp; Crew</a></li>
-			<li><a id="gallery" class="menubarbtn" href="" onClick="loadGallery()">Gallery</a></li>
-			<li><a id="shopping" class="menubarbtn" href="" onClick="loadShopping()">Shopping</a></li>
-			<li><a id="videos" class="menubarbtn" href="" onClick="loadVideos()">Videos</a></li>
-			<li><a id="hall" class="menubarbtn" href="" onClick="loadHallofFame()">Hall of Fame</a></li>
+			<li><a id="home" class="menubarbtn" href="#" onClick="loadHome()">Home</a></li>
+			<li><a id="castCrew" class="menubarbtn" href="#" onClick="loadCastCrew()">Cast &amp; Crew</a></li>
+			<li><a id="gallery" class="menubarbtn" href="#" onClick="loadGallery()">Gallery</a></li>
+			<li><a id="shopping" class="menubarbtn" href="#" onClick="loadShopping()">Shopping</a></li>
+			<li><a id="videos" class="menubarbtn" href="#" onClick="loadVideos()">Videos</a></li>
+			<li><a id="hall" class="menubarbtn" href="#" onClick="loadHallofFame()">Hall of Fame</a></li>
 		</ul>
 		</div>
 	</div>	
