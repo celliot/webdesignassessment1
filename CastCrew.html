@@ -1,9 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<link rel="stylesheet" href="frames.css" type="text/css"/>
+	<link rel="stylesheet" href="frames.css" type="text/css" />
+	<script src="hoverShow.js" type="text/javascript" />
 </head>
 <body>
-<div class="placeholder">Cast &amp; Crew Placeholder<div>
+<div id="title" class="writing">Cast &amp; Crew<div>
+<ul>
+<table id="castList">
+<tr>
+<td><li><a onmouseover="ShowContent('gandalf'); return true;" onmouseout="HideContent('gandalf'); return true;" href="javascript:ShowContent('gandalf')">Ian McKellen (Gandalf the Grey)</a></li></td>
+<td><li>Martin Freeman (Bilbo Baggins)</li></td>
+<td><li>Richard Armitage (Thorin Oakenshield)</li></td>
+<td><li>Ken Scott (Balin)</li></td>
+<td><li>Graham McTavish (Dwalin)</li></td>
+</tr>
+<tr>
+<td><li>William Kircher (Bifur)</li></td>
+<td><li>James Nesbitt (Bofur)</li></td>
+<td><li>Stephen Hunter (Bombur)</li></td>
+<td><li>Dean O'Gorman (Fili)</li></td>
+<td><li>Aidan Turner (Kili)</li></td>
+</tr>
+<tr>
+<td><li>John Callen (Oin)</li></td>
+<td><li>Peter Hambleton (Gloin)</li></td>
+<td><li>Jed Brophy (Nori)</li></td>
+<td><li>Mark Hadlow (Dori)</li></td>
+<td><li>Adam Brown (Ori)</li></td>
+</tr>
+<tr>
+<td><li>Orlando Bloom (Legolas)</li></td>
+<td><li>Evangeline Lilly (Tauriel)</li></td>
+<td><li>Lee Pace (Thranduil)</li></td>
+<td><li>Cate Blanchett (Galadriel)</li></td>
+<td><li>Benedict Cumberpatch (Smaug)</li></td>
+</tr>
+<tr>
+<td><li>Mikael Persbrandt (Beorn the skin-changer)</li></td>
+<td><li>Sylvester McCoy (Radagast the Brown)</li></td>
+<td><li>Luke Evans (bard)</li></td>
+<td><li>Manu Bennett (Azog the defiler)</li></td>
+<td><li>Lawrence Makoare (Bolg son of Azog)</li></td>
+</tr>
+</table>
+</ul>
+ <div id="gandalf" style="display:none; position:absolute; border-style: solid; background-color: white; padding: 5px;">
+    Ian McKeller as Gandalf the Grey: 
+</div>
 </body>

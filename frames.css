@@ -2,11 +2,13 @@
 	color: gold;
 }
 
+.writing {
+	color: gold;
+}
+
 img#background {
 	display: block;
-	max-height: 480px;
+	max-height: 490px;
 	width: auto;
 	height: auto;
 }
-
-#imdbText:
