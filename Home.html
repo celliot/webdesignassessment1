@@ -6,39 +6,33 @@
 	<title>The Hobbit: The Desolation of Smaug</title>
 	<link rel="stylesheet" href="hobbit.css" type="text/css"/>
 <script type="text/javascript">
-	funtion loadHome() {
-		window.alert ("Going Home!");
-		/*
-		var currentFrame = document.getElemendById("currentFrame");
-		if (currentFrame.getAttribute("src")!="Main.html"){
-			currentFrame.setAttribute("src", "Main.html");
-			window.frames['currentFrame'].location.reload();
-		}
-		*/
+
+	function loadHome() {
+		document.getElementById("currentFrame").src = 'Main.html';
 	}
 	
 	function loadCastCrew(){
-		alert ("Cast & Crew");
+		document.getElementById("currentFrame").src = 'castCrew.html';
 	}
 	
 	function loadGallery() {
-		alert ("Gallery");
+		document.getElementById("currentFrame").src = 'gallery.html';
 	}
 	
 	function loadShopping() {
-		alert ("Shopping");
+		document.getElementById("currentFrame").src = 'shopping.html';
 	}
 	
 	function loadVideos(){
-		alert ("Videos");
+		document.getElementById("currentFrame").src = 'videos.html';
 	}
 	
 	function loadHallofFame(){
-		alert ("Hall of Fame");
+		document.getElementById("currentFrame").src = 'hallofFame.html';
 	}
 </script>
 </head>
-<body>
+<body onLoad="loadHome()">
 <div class="page">
 	<div class="header">
 		<img id="logo" src="Images/logo.png" alt="The Hobbit Logo"/>
@@ -54,7 +48,7 @@
 		</div>
 	</div>	
 	<div class="main">
-	<iframe id="currentFrame" src="CastCrew.html" frameBorder="0" scrolling="No"></iframe>
+	<iframe id="currentFrame" src="" frameBorder="0" scrolling="No"></iframe>
 	</div>
 </div>
 <div class="footer">
