@@ -81,3 +81,9 @@ ul li {
 	height: 200px;
 	width: 350px;
 }
+
+.ui-datepicker {
+	background-color: white;
+	font: arial "sans-serif";
+	border: 1px solid grey;
+}

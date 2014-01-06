@@ -5,7 +5,22 @@
 <head>
 	<link rel="stylesheet" href="frames.css" type="text/css"/>
 	<link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/leo-arrow" rel="stylesheet" type="text/css"/>
-</head>
+	<script src="jquery-1.6.2.min.js"></script>
+	<script src="jquery-ui-1.8.15.custom.min.js"></script>
+	<link rel="stylesheet" href="jquery/jqueryCalendar.css">
+	<script>
+        $(function() {
+        $( "#dob" ).datepicker({
+            dateFormat : 'mm/dd/yy',
+            changeMonth : true,
+            changeYear : true,
+            yearRange: '-100y:c+nn',
+            maxDate: '-1d'
+        });
+    });
+	</script>
+	
+	</head>
 <body>
 <div class="pageRegister">
 	<form class="registrationForm">
@@ -14,27 +29,27 @@
 	User Name:<input class="formFieldText" type="text" name="username" required="required"/><br><br>
 	Password:<input class="formFieldText" type="password" name="pwd" required="required"/><br><br>
 	<br>
-	Date of birth:<input class="formField" type="date" name="birthdate"/><br><br>
+	Date of birth:<input class="formField" id="dob" type="date" name="dob"/><br><br>
 	Male:<input type="radio" name="genderMale"/>
 	Female:<input type="radio" name="genderFemale"/><br><br>
 	Email:<input class="formFieldText" type="text" name="email" required="required"/><br><br>
 	
 	Address:<textarea class="formField" rows="5" cols="50" type="text" maxlength="250" name="address"></textarea><br><br>
 	Membership Type:
-	<datalist class="formField" id="membershipTypes" required="required">
-		<option value="Basic">
-		<option value="Bronze">
-		<option value="Silver">
-		<option value="Gold">
-		<option value="Platinum">
-	</datalist></br><br>
+	<select class="formField" required="required">
+		<option value="Basic">Basic</option>
+		<option value="Bronze">Bronze</option>
+		<option value="Silver">Silver</option>
+		<option value="Gold">Gold</option>
+		<option value="Platinum">Platinum</option>
+	</select></br><br>
 	Duration of Membership:
-	<datalist class="formField" id="membershipTypes" required="required">
-		<option value="Annual">
-		<option value="5 Years">
-		<option value="10 Years">
-		<option value="Lifetime">
-	</datalist></br><br>
+	<select class="formField" required="required">
+		<option value="Annual">Annual</option>
+		<option value="5 Years">5 Years</option>
+		<option value="10 Years">10 Years</option>
+		<option value="Lifetime">Lifetime</option>
+	</select></br><br>
 	<input type="submit" value="Submit">
 	</form>
 </div>
