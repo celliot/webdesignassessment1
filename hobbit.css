@@ -14,7 +14,23 @@ a {
 a:hover {
   color: white;
 }
-  
+
+ #registration {
+	position: relative;
+	float: right;
+ }
+ 
+ #signin {
+	float: left;
+	padding-right: 10px;
+ }
+ 
+ #register {
+	float: right;
+	padding-left: 10px;
+ }
+ 
+
 img#logo {
 	display: block;
 	position: relative;
