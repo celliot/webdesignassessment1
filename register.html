@@ -4,38 +4,71 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<link rel="stylesheet" href="frames.css" type="text/css"/>
-	<link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/leo-arrow" rel="stylesheet" type="text/css"/>
-	<script src="jquery-1.6.2.min.js"></script>
-	<script src="jquery-ui-1.8.15.custom.min.js"></script>
-	<link rel="stylesheet" href="jquery/jqueryCalendar.css">
-	<script>
-        $(function() {
-        $( "#dob" ).datepicker({
-            dateFormat : 'mm/dd/yy',
-            changeMonth : true,
-            changeYear : true,
-            yearRange: '-100y:c+nn',
-            maxDate: '-1d'
-        });
-    });
-	</script>
-	
-	</head>
+	<link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/leo-arrow" type="text/css"/>
+</head>
 <body>
 <div class="pageRegister">
-	<form class="registrationForm">
-	First Name:<input class="formFieldText" type="text" name="firstname" required="required"/><br><br>
-	Surname:<input class="formFieldText" type="text" name="surname"required="required"/><br><br>
-	User Name:<input class="formFieldText" type="text" name="username" required="required"/><br><br>
-	Password:<input class="formFieldText" type="password" name="pwd" required="required"/><br><br>
+	<form class="registrationForm" action="registration.txt">
+	<div>First Name:</div><input class="formFieldText" type="text" name="firstname" required="required"/><br><br>
+	<div>Surname:</div><input class="formFieldText" type="text" name="surname"required="required"/><br><br>
+	<div>User Name:</div><input class="formFieldText" type="text" name="username" required="required"/><br><br>
+	<div>Password:</div><input class="formFieldText" type="password" name="pwd" required="required"/><br><br>
 	<br>
-	Date of birth:<input class="formField" id="dob" type="date" name="dob"/><br><br>
-	Male:<input type="radio" name="genderMale"/>
-	Female:<input type="radio" name="genderFemale"/><br><br>
-	Email:<input class="formFieldText" type="text" name="email" required="required"/><br><br>
+	<div>Date of birth:</div><br>
+	<div>Day:</div><select required="required">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+		<option value="13">13</option>
+		<option value="14">14</option>
+		<option value="15">15</option>
+		<option value="16">16</option>
+		<option value="17">17</option>
+		<option value="18">18</option>
+		<option value="19">19</option>
+		<option value="20">20</option>
+		<option value="21">21</option>
+		<option value="22">22</option>
+		<option value="23">23</option>
+		<option value="24">24</option>
+		<option value="25">25</option>
+		<option value="26">26</option>
+		<option value="27">27</option>
+		<option value="28">28</option>
+		<option value="29">29</option>
+		<option value="30">30</option>
+		<option value="31">31</option>
+	</select>
+	<div>Month:</div><select required="required">
+		<option value="January">January</option>
+		<option value="February">February</option>
+		<option value="March">March</option>
+		<option value="April">April</option>
+		<option value="May">May</option>
+		<option value="June">June</option>
+		<option value="July">July</option>
+		<option value="August">August</option>
+		<option value="September">September</option>
+		<option value="October">October</option>
+		<option value="November">November</option>
+		<option value="December">December</option>
+	</select>
+	<div>Year:</div><input type="text" name="yob" required="required"/><br>
+	<div>Male:</div><input type="radio" name="genderMale"/>
+	<div>Female:</div><input type="radio" name="genderFemale"/><br><br>
+	<div>Email:</div><input class="formFieldText" type="text" name="email" required="required"/><br><br>
 	
-	Address:<textarea class="formField" rows="5" cols="50" type="text" maxlength="250" name="address"></textarea><br><br>
-	Membership Type:
+	<div>Address:</div><textarea class="formField" rows="5" cols="50" type="text" maxlength="250" name="address"></textarea><br><br>
+	<div>Membership Type:</div>
 	<select class="formField" required="required">
 		<option value="Basic">Basic</option>
 		<option value="Bronze">Bronze</option>
@@ -43,7 +76,7 @@
 		<option value="Gold">Gold</option>
 		<option value="Platinum">Platinum</option>
 	</select></br><br>
-	Duration of Membership:
+	<div>Duration of Membership:</div>
 	<select class="formField" required="required">
 		<option value="Annual">Annual</option>
 		<option value="5 Years">5 Years</option>
